@@ -22,7 +22,9 @@ app.get('/health', (req, res) => {
 });
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 }
 
 export default app;
