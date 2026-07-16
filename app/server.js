@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  console.log(req);
   res.json({ status: 'UP' });
 });
 
